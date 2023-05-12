@@ -1,0 +1,91 @@
+.container {
+  height: 500px;
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px; /* Position the sidebar below the navbar */
+  left: 0;
+  overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  grid-gap: 10px;
+}
+
+.itemContainer {
+  margin-left: 15px;
+
+  height: 357px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.buttonContainer1 {
+  background-color: white;
+  margin-left: 15px;
+}
+
+.showMore {
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.showMore:hover {
+  background-color: black;
+  color: white;
+}
+
+hrDiv {
+  text-align: center;
+}
+hr {
+  margin: 20px auto;
+  border: none;
+  border-top: 2px solid #ccc;
+  width: 90%;
+}
+
+.imgContainer {
+  display: flex;
+  gap: 8px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-weight: 100;
+  font-size: small;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profileIconBadge {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: rgb(233, 116, 116);
+  position: absolute;
+  top: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
